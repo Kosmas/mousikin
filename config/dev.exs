@@ -36,8 +36,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :mousikin, Mousikin.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "phoenix",
+  password: "xineohp",
   database: "mousikin_dev",
   hostname: "localhost",
   pool_size: 10
