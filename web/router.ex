@@ -38,6 +38,7 @@ defmodule Mousikin.Router do
   scope "/", Mousikin do
     pipe_through :protected
     # Add protected routes below
+    resources "/artists", ArtistController
   end
 
   # Other scopes may use custom stacks.
