@@ -34,6 +34,7 @@ defmodule Mousikin.Router do
     get "/", PageController, :index
     # Add public routes below
     resources "/artists", ArtistController
+    resources "/albums", AlbumController
   end
 
   scope "/", Mousikin do
