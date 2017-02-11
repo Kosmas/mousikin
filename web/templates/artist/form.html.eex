@@ -23,6 +23,13 @@
     <%= error_tag f, :last_name %>
   </div>
 
+  <%= inputs_for f, :albums, fn af -> %>
+  <div class="form-group">
+    <%= label af, :title, "Title", class: "control-label" %>
+    <%= text_input af, :title, class: "form_control" %>
+  </div>
+  <% end %>
+
   <div class="form-group">
     <%= submit "Submit", class: "btn btn-primary" %>
   </div>
